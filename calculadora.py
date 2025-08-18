@@ -2,7 +2,7 @@ def calcular_interés_compuesto(capital: float, tasa: float, tiempo: int) -> flo
     """
     Calcula el interés compuesto usando la formula del mismo.
     Fórmula: A = P * (1 + r/n)^(n*t)
-    En este caso suponemos capitalización anual (n = 1).
+    En este caso se supone que la capitalización es anual (n = 1).
     """
     try:
         if capital <= 0 or tasa < 0 or tiempo <= 0:
@@ -28,4 +28,16 @@ def calcular_meta_de_ahorro_(meta: float, tiempo: int, tasa: float = 0.0 ) -> fl
 
     except Exception as e:
         print("Error en cálculo de meta de ahorro:", e)
+        return 0
+
+def plan_ahorro_mensual(ingreso: float, porcentaje: float) -> float:
+    """
+    Calcula cuánto ahorrar cada mes
+    """
+    try:
+        if ingreso <= 0 or porcentaje <= 0:
+            raise ValueError("Los valores del ingreso y el porcentaje deben ser positivos.")
+        return ingreso * (porcentaje / 100)
+    except Exception as e:
+        print( "Error en el calculo de plan de ahorro:", e )
         return 0
