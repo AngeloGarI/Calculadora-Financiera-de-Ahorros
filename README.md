@@ -21,11 +21,11 @@ Incluye cálculos de interés simple, interés compuesto y planificación de aho
    git clone https://github.com/AngeloGarI/Calculadora-Financiera-de-Ahorros.git
 
 
-Abre el archivo calculadora.py en tu editor o terminal.
+Abre el archivo Calculadora financiera.py en tu editor o terminal.
 
 Ejecuta el programa:
 
-python calculadora.py
+python Calculadora financiera.py
 
 
 Sigue las instrucciones en pantalla para seleccionar la opción deseada.
