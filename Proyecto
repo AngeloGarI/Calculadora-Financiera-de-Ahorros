@@ -82,11 +82,3 @@ while True:
         monto = calcular_interés_compuesto(capital, tasa, tiempo)
         print(f"El monto acumulado será: {monto:.2f}")
 
-def analizar_escenarios():
-    escenarios = [
-        ("Crecimiento moderado", 1000, 0.05, 5, 1276.28),
-        ("Inversión sin riesgo", 1000, 0, 5, 1000),
-        ("Crecimiento agresivo", 1000, 0.1, 3, 1331)
-    ]
-if __name__ == "__main__":
-    analizar_escenarios()
